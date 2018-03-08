@@ -101,9 +101,9 @@ def getlabel(label):
     '''
         Equivalent class labels based on datafolder where sample is pickeddd
     '''
-    if(label=="Drowsy"):
+    if(label=="Folder1"):
         return 0
-    elif(label == "Distracted"):
+    elif(label == "Folder2"):
         return 1
     else:
         return 2
@@ -164,7 +164,7 @@ def builddatabase(datasamples, databasepath):
 
 if __name__=='__main__':
     datasamples =[]
-    database = 'timeseriesdatabase.h5'
+    database = 'mydatabase.h5'
     rootpath = './dataset'
     datapaths = os.listdir('./dataset')
     for datapath in datapaths:
